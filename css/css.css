@@ -1,0 +1,38 @@
+/* selector {
+    property: value;
+} */
+
+* {
+    color: green;
+}
+
+li { /* 구체적일수록 우선순위가 높음 */
+    color: blue;
+}
+
+li#special { /* ID */
+    color: brown;
+}
+
+#special { /* ID */
+    color: pink;
+}
+
+.red { 
+    width: 100px;
+    height: 100px;
+    padding: 20px 0px; /* 위, 아래 */
+    margin: 20px;
+    border: 2px dashed red;
+    background: yellow;
+}
+
+button:hover{ /* 버튼에 마우스를 올리면 변경 */
+    color: red;
+    background: violet;
+}
+
+/* ^$ */
+a[href="https://www.naver.com/"] {
+    color: purple;
+}
